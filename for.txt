@@ -1,0 +1,11 @@
+read n
+sum=0
+mul=1
+
+for (( i=1; i<=n; i++))
+do
+mul=`expr $i \* $i`
+sum=`expr $sum + $mul`
+echo "$sum"
+
+done
